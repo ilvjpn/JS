@@ -70,3 +70,61 @@ console.log(isim2);
 const dil = null;
 console.log(dil);
 console.log(typeof dil);
+
+const sucuk = 40;
+const sakiz = 30;
+const kola = 20;
+
+let toplam = sucuk + sakiz + kola;
+//* yukaridaki CONST olsa asagidaki degerler olmazdi
+toplam++;
+toplam += 50;
+console.log(toplam);
+//* birden fazla degisken yazdirmak icin
+console.log(toplam, kola);
+
+//* Sabit ifade yazmak icin
+console.log("Toplam Fiyat: ", toplam);
+
+const ad = "can";
+const soyad = "canan";
+console.log(ad + soyad);
+console.log(ad, soyad);
+
+const sayi1 = 5,
+  sayi2 = "7";
+console.log(sayi1 + sayi2);
+
+const ad1 = "muhammed";
+const yas = 30;
+
+console.log(`ismi: ${ad1}'dir.
+ yasi: ${yas}'dur`);
+console.log("ismi: " + ad1, "yasi: " + yas);
+
+const taban = 3.14;
+const us = 2;
+
+const result = taban ** us;
+console.log(result);
+
+//! artirma azaltma yapacaksak CONST kullanilmaz.
+
+// MOD Alma
+
+const a = 654;
+const birler = a % 10;
+console.log(`Birler Basamagi= ${birler} `);
+const onlar = Math.floor(a / 10) % 10;
+console.log(`Onlar Basamagi= ${onlar} `);
+console.log(`Yuzler Basamagi= ${Math.floor(a / 100) % 10} `);
+
+const number = 100;
+const number2 = "100";
+
+console.log(number == number2);
+console.log(number === number2);
+console.log(number != number2);
+console.log(number !== number2);
+
+console.log(typeof number, typeof number2);
