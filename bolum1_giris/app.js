@@ -128,3 +128,25 @@ console.log(number != number2);
 console.log(number !== number2);
 
 console.log(typeof number, typeof number2);
+
+//* Asadaki sistem calisir.
+console.log(number2 > 33);
+
+//?===============IF Ternary==================
+
+//const age = +prompt("yasinizi giriniz");
+//const age1 = Number(prompt("yasinizi giriniz"));
+//console.log(`yasiniz : ${age}`);
+//console.log(typeof age);
+//console.log(typeof age1);
+
+const name1 = prompt("Adinizi giriniz");
+const age = +prompt("Yasinizi giriniz");
+
+console.log(
+  `Adi: ${name1} Durumu: ${age >= 18 ? "Ehliyet alabilir" : "Ehliyet alamaz"} `
+);
+
+const netice =
+  age > 18 ? `${name1} ehliyet alabilir` : `${name1} ehliyet alamaz`;
+console.log(netice);
